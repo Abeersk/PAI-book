@@ -1,0 +1,8 @@
+{
+  "label": "Module 4: Vision-Language-Action (VLA)",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "Understanding how Vision-Language-Action systems enable humanoid robots to respond to human commands through integrated perception, language, and action."
+  }
+}

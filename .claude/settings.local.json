@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(echo \"This is similar to how radio stations broadcast on specific frequencies and radios tune in to receive those broadcasts. A sensor node might \"\"broadcast\"\" data on a \"\"laser_scan\"\" topic, and multiple other nodes can \"\"tune in\"\" to receive that information without the sensor needing to know who is listening.\")",
+      "Bash(echo \"**Domains**: A DDS domain is a communication space where DDS entities can discover and communicate with each other. Think of it as a separate \"\"universe\"\" of communication - nodes in different domains cannot communicate with each other, which provides isolation and security.\")",
+      "Bash(echo \"- **Topic**: Defines the data type and name for communication (like the \"\"channel\"\")\")",
+      "Bash(powershell -Command \"(Get-Content ''C:\\Users\\NAD\\Desktop\\all-work\\humanoid-ai\\docs\\module-2-digital-twin\\chapter-2-gazebo-environment.md'' | Measure-Object -Word).Words\")",
+      "Bash(dir docs /s)",
+      "Bash(dir docs /s /b)",
+      "Bash(powershell \"Get-ChildItem docs -Recurse -Name\")",
+      "Bash(dir docs)",
+      "Bash(dir docsdocs)",
+      "Bash(dir \"docs\\docs\")",
+      "Bash(dir \"docs\\docs\\module-3-ai-brain\")",
+      "Bash(rm -rf build/ build_output.txt .docusaurus/)",
+      "Bash(rm -rf node_modules/)"
+    ]
+  }
+}

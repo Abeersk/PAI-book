@@ -1,0 +1,240 @@
+/* Responsive Breakpoints CSS Module */
+
+/* Mobile First Breakpoints */
+.container {
+  width: 100%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+/* Extra extra large devices (1400px and up) */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+/* Common responsive utility classes */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -1rem;
+  margin-left: -1rem;
+}
+
+.col {
+  flex: 1 0 0%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+/* Responsive column classes */
+.col-12 { flex: 0 0 auto; width: 100%; }
+.col-11 { flex: 0 0 auto; width: 91.6667%; }
+.col-10 { flex: 0 0 auto; width: 83.3333%; }
+.col-9 { flex: 0 0 auto; width: 75%; }
+.col-8 { flex: 0 0 auto; width: 66.6667%; }
+.col-7 { flex: 0 0 auto; width: 58.3333%; }
+.col-6 { flex: 0 0 auto; width: 50%; }
+.col-5 { flex: 0 0 auto; width: 41.6667%; }
+.col-4 { flex: 0 0 auto; width: 33.3333%; }
+.col-3 { flex: 0 0 auto; width: 25%; }
+.col-2 { flex: 0 0 auto; width: 16.6667%; }
+.col-1 { flex: 0 0 auto; width: 8.3333%; }
+
+/* Mobile-specific classes */
+@media (max-width: 767.98px) {
+  .mobile-hidden {
+    display: none !important;
+  }
+
+  .mobile-full-width {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .mobile-centered {
+    text-align: center;
+  }
+}
+
+/* Tablet-specific classes */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .tablet-hidden {
+    display: none !important;
+  }
+}
+
+/* Desktop-specific classes */
+@media (min-width: 992px) {
+  .desktop-hidden {
+    display: none !important;
+  }
+}
+
+/* Grid system for responsive layouts */
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+/* Responsive grid adjustments */
+@media (min-width: 768px) {
+  .grid-cols-1-md {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .grid-cols-2-md {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .grid-cols-3-md {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .grid-cols-4-md {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 992px) {
+  .grid-cols-1-lg {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .grid-cols-2-lg {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .grid-cols-3-lg {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .grid-cols-4-lg {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+/* Flexbox utilities for responsive layouts */
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+/* Responsive text sizing */
+.text-small {
+  font-size: 0.875rem; /* 14px */
+}
+
+.text-base {
+  font-size: 1rem; /* 16px */
+}
+
+.text-large {
+  font-size: 1.125rem; /* 18px */
+}
+
+.text-xl {
+  font-size: 1.25rem; /* 20px */
+}
+
+@media (min-width: 768px) {
+  .text-small-md {
+    font-size: 0.875rem;
+  }
+
+  .text-base-md {
+    font-size: 1rem;
+  }
+
+  .text-large-md {
+    font-size: 1.25rem;
+  }
+
+  .text-xl-md {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .text-small-lg {
+    font-size: 1rem;
+  }
+
+  .text-base-lg {
+    font-size: 1.125rem;
+  }
+
+  .text-large-lg {
+    font-size: 1.25rem;
+  }
+
+  .text-xl-lg {
+    font-size: 1.5rem;
+  }
+}

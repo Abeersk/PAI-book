@@ -1,0 +1,126 @@
+# API Contract: Homepage Data API
+
+# This contract defines the API endpoints that support the attractive homepage
+# for the Physical AI & Humanoid Robotics Book
+
+openapi: 3.0.0
+info:
+  title: Physical AI & Humanoid Robotics Book API
+  version: 1.0.0
+  description: API for homepage and module data for the educational book
+
+paths:
+  /api/homepage:
+    get:
+      summary: Get homepage data
+      description: Retrieve all data needed to render the attractive homepage
+      responses:
+        '200':
+          description: Homepage data
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  hero:
+                    $ref: '#/components/schemas/HeroSection'
+                  modules:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Module'
+                  cta:
+                    $ref: '#/components/schemas/CTASection'
+
+  /api/modules:
+    get:
+      summary: Get all modules
+      description: Retrieve data for all 4 book modules with chapter highlights
+      responses:
+        '200':
+          description: List of modules
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Module'
+
+components:
+  schemas:
+    HeroSection:
+      type: object
+      properties:
+        title:
+          type: string
+          description: Book title
+          example: "Physical AI & Humanoid Robotics"
+        tagline:
+          type: string
+          description: Compelling tagline for the book
+          example: "Understanding the Intersection of Artificial Intelligence and Humanoid Robotics"
+        illustration:
+          type: string
+          description: Path to background illustration
+          example: "/img/robotics-concept-illustration.svg"
+        ctaButton:
+          $ref: '#/components/schemas/CTAButton'
+
+    Module:
+      type: object
+      properties:
+        id:
+          type: string
+          description: Unique module identifier
+          example: "module-1-ros2"
+        title:
+          type: string
+          description: Complete module title
+          example: "Module 1: The Robotic Nervous System (ROS 2)"
+        description:
+          type: string
+          description: Brief educational description
+          example: "Learn how ROS 2 provides the essential communication backbone for complex robots"
+        icon:
+          type: string
+          description: Path to module icon
+          example: "/img/ros2-icon.svg"
+        chapterHighlights:
+          type: array
+          items:
+            $ref: '#/components/schemas/ChapterHighlight'
+
+    ChapterHighlight:
+      type: object
+      properties:
+        id:
+          type: string
+          description: Unique chapter identifier
+          example: "ch-1-2"
+        title:
+          type: string
+          description: Chapter title
+          example: "Nodes, Topics, and Services Explained"
+        description:
+          type: string
+          description: Brief chapter description
+          example: "Understanding ROS 2 communication patterns"
+
+    CTAButton:
+      type: object
+      properties:
+        text:
+          type: string
+          description: Button text
+          example: "Start Learning"
+        link:
+          type: string
+          description: Destination link
+          example: "/module-1-ros2"
+
+    CTASection:
+      type: object
+      properties:
+        primary:
+          $ref: '#/components/schemas/CTAButton'
+        secondary:
+          $ref: '#/components/schemas/CTAButton'

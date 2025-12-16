@@ -1,0 +1,17 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#f0f8ff"/>
+  <circle cx="200" cy="100" r="40" fill="#4a90e2" opacity="0.7"/>
+  <circle cx="180" cy="90" r="5" fill="#ffffff"/>
+  <circle cx="220" cy="90" r="5" fill="#ffffff"/>
+  <path d="M180 115 Q200 130 220 115" stroke="#ffffff" stroke-width="2" fill="none"/>
+  <rect x="170" y="140" width="60" height="80" fill="#357abd" opacity="0.8"/>
+  <rect x="160" y="160" width="15" height="30" fill="#357abd" opacity="0.8"/>
+  <rect x="225" y="160" width="15" height="30" fill="#357abd" opacity="0.8"/>
+  <rect x="175" y="220" width="12" height="40" fill="#357abd" opacity="0.8"/>
+  <rect x="213" y="220" width="12" height="40" fill="#357abd" opacity="0.8"/>
+  <circle cx="100" cy="220" r="25" fill="#e74c3c" opacity="0.7"/>
+  <circle cx="300" cy="220" r="25" fill="#e74c3c" opacity="0.7"/>
+  <circle cx="50" cy="80" r="30" fill="#9b59b6" opacity="0.7"/>
+  <circle cx="350" cy="80" r="30" fill="#9b59b6" opacity="0.7"/>
+  <text x="200" y="280" text-anchor="middle" font-family="Arial" font-size="14" fill="#666666" opacity="0.8">Humanoid Robot & AI Brain Concept</text>
+</svg>

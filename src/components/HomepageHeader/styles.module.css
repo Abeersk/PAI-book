@@ -1,0 +1,123 @@
+/* Styles for HomepageHeader component */
+
+.heroBanner {
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background: var(--gradient-primary);
+  color: var(--text-inverted);
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.title {
+  font-size: var(--font-size-5xl);
+  font-weight: var(--font-weight-bold);
+  line-height: 1.2;
+  margin: 0;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-normal);
+  line-height: 1.5;
+  max-width: 600px;
+  margin: 0 auto 1.5rem;
+  text-align: center;
+  opacity: 0.9;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.ctaButton {
+  background: var(--bg-primary);
+  color: var(--text-primary) !important;
+  border-radius: var(--radius-xl);
+  padding: 1rem 2rem;
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  transition: all var(--transition-normal);
+  text-decoration: none !important;
+  box-shadow: var(--shadow-lg);
+}
+
+.ctaButton:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-xl);
+  text-decoration: none !important;
+}
+
+.secondaryButton {
+  background: transparent;
+  color: var(--text-inverted) !important;
+  border: 2px solid var(--text-inverted) !important;
+  border-radius: var(--radius-xl);
+  padding: 1rem 2rem;
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  transition: all var(--transition-normal);
+  text-decoration: none !important;
+}
+
+.secondaryButton:hover {
+  background: var(--text-inverted);
+  color: var(--bg-primary) !important;
+  transform: translateY(-3px);
+  text-decoration: none !important;
+}
+
+/* Dark theme adjustments */
+[data-theme='dark'] .heroBanner {
+  background: var(--gradient-primary);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .title {
+    font-size: var(--font-size-4xl);
+  }
+
+  .subtitle {
+    font-size: var(--font-size-lg);
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+
+  .ctaButton,
+  .secondaryButton {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: var(--font-size-3xl);
+  }
+
+  .heroBanner {
+    padding: 1.5rem 1rem;
+  }
+}

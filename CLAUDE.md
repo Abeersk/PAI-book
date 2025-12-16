@@ -208,3 +208,12 @@ Wait for consent; never auto-create ADRs. Group related decisions (stacks, authe
 
 ## Code Standards
 See `.specify/memory/constitution.md` for code quality, testing, performance, security, and architecture principles.
+
+## Active Technologies
+- Markdown, Docusaurus documentation framework + Docusaurus, Claude Code, Spec-Kit Plus, ROS 2 documentation, Gazebo documentation, Unity documentation (002-physical-ai-book)
+- Git repository, Markdown files, Docusaurus static site (002-physical-ai-book)
+- TypeScript/JavaScript for React components, SCSS/CSS Modules for styling + Docusaurus framework, React, CSS Modules, TypeScript (001-docusaurus-homepage)
+- N/A (static content only) (001-docusaurus-homepage)
+
+## Recent Changes
+- 002-physical-ai-book: Added Markdown, Docusaurus documentation framework + Docusaurus, Claude Code, Spec-Kit Plus, ROS 2 documentation, Gazebo documentation, Unity documentation

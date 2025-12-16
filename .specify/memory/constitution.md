@@ -1,55 +1,66 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+Sync Impact Report:
+Version change: 0.1.0 -> 1.0.0 (initial project constitution)
+Added sections: All core principles for AI/Spec-Driven Book on Physical AI & Humanoid Robotics
+Removed sections: Template placeholders
+Templates requiring updates: ✅ plan-template.md, spec-template.md, tasks-template.md
+Follow-up TODOs: None
+-->
+# AI/Spec-Driven Book on Physical AI & Humanoid Robotics Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### Educational Focus and Conceptual Clarity
+All content must prioritize conceptual understanding over implementation details. Technical concepts must be explained with simple flows, diagrams, and summaries. Content must emphasize understanding systems, architectures, and workflows rather than implementing complex robotics algorithms.
+**Rationale**: The primary goal of the book is conceptual clarity and learning, not low-level robotics engineering. This ensures accessibility for learners with AI/software backgrounds.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### Accuracy and Verifiability
+All technical concepts must align with official documentation and trusted sources. All factual claims must be verifiable. Prefer official docs, whitepapers, and well-known research references.
+**Rationale**: Maintaining accuracy builds trust and ensures learners receive reliable information aligned with industry standards.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### No Complex Robotics Code
+No complex robotics code, low-level controllers, kinematics math, or advanced motion planning implementations. Code samples (if any) must be minimal, educational, and pseudocode or simplified examples.
+**Rationale**: The book must focus on conceptual understanding rather than implementation details. This aligns with the educational mission and avoids overwhelming readers with unnecessary complexity.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### Spec-Driven Development
+All content follows structured specifications (Spec-Kit Plus). Every feature/module must have clear requirements and acceptance criteria defined before implementation.
+**Rationale**: Ensures systematic development and maintains quality control throughout the project lifecycle.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### Reproducibility and Clarity
+Examples must be easy to follow and conceptually reproducible. Written for learners and students with an AI/software background. Each concept explained with simple flow, diagrams, and summaries.
+**Rationale**: Enables learners to understand and apply concepts without getting bogged down in implementation specifics.
 
-### [PRINCIPLE_6_NAME]
+### RAG Chatbot Integrity
+The chatbot must answer questions strictly using book content. Must support Q&A based only on user-selected text. Must prevent hallucinations.
+**Rationale**: Maintains the integrity of the educational content and ensures the chatbot serves as a reliable study aid.
 
+## Technical Stack Constraints
 
-[PRINCIPLE__DESCRIPTION]
+**Framework**: Docusaurus for book framework, deployed on GitHub Pages
+**Spec Framework**: Spec-Kit Plus for specification management
+**Authoring Tool**: Claude Code for content creation
+**Robotics Platforms**: ROS 2, Gazebo, Unity, NVIDIA Isaac (conceptual use only)
+**AI Focus**: Vision-Language-Action (VLA) pipelines and reasoning systems
+**Backend**: FastAPI for API services
+**Database**: Neon Serverless Postgres for data storage
+**Vector Database**: Qdrant Cloud (Free Tier) for RAG functionality
+**Chatbot**: OpenAI Agents / ChatKit SDK for question-answering
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+## Book Structure Requirements
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
-
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+**Modular Organization**: Clean modular structure aligned with an educational curriculum
+**Core Modules**:
+1. The Robotic Nervous System (ROS 2) – concepts & architecture
+2. The Digital Twin (Gazebo & Unity) – simulation principles
+3. The AI-Robot Brain (NVIDIA Isaac) – perception & training concepts
+4. Vision-Language-Action (VLA) – LLM-driven planning and reasoning
+5. Capstone: Autonomous Humanoid – system-level walkthrough (conceptual)
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+**Amendment Procedure**: Changes to core principles require explicit approval from project stakeholders and must be documented with rationale.
+**Versioning Policy**: Follow semantic versioning - MAJOR for backward incompatible changes, MINOR for new principles/features, PATCH for clarifications.
+**Compliance Reviews**: All content contributions must be reviewed for adherence to constitutional principles before acceptance.
+**Quality Assurance**: Regular audits ensure ongoing compliance with educational focus and technical constraints.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2025-12-10 | **Last Amended**: 2025-12-10

@@ -1,0 +1,50 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" fill="#f8f9fa"/>
+
+  <text x="300" y="30" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold" fill="#2c3e50">ROS 2 Architecture - Conceptual Overview</text>
+
+  <!-- DDS/RMW Layer -->
+  <rect x="50" y="60" width="500" height="40" fill="#3498db" opacity="0.2" stroke="#3498db" stroke-width="2"/>
+  <text x="300" y="85" text-anchor="middle" font-family="Arial" font-size="14" fill="#2c3e50" font-weight="bold">DDS/RMW Layer (Communication)</text>
+
+  <!-- ROS 2 Client Libraries -->
+  <rect x="100" y="130" width="400" height="40" fill="#e67e22" opacity="0.2" stroke="#e67e22" stroke-width="2"/>
+  <text x="300" y="155" text-anchor="middle" font-family="Arial" font-size="14" fill="#2c3e50" font-weight="bold">ROS 2 Client Libraries (rcl)</text>
+
+  <!-- ROS 2 Abstraction Layer -->
+  <rect x="150" y="200" width="300" height="40" fill="#9b59b6" opacity="0.2" stroke="#9b59b6" stroke-width="2"/>
+  <text x="300" y="225" text-anchor="middle" font-family="Arial" font-size="14" fill="#2c3e50" font-weight="bold">ROS 2 Abstraction Layer</text>
+
+  <!-- User Code Layer -->
+  <rect x="200" y="270" width="200" height="40" fill="#27ae60" opacity="0.2" stroke="#27ae60" stroke-width="2"/>
+  <text x="300" y="295" text-anchor="middle" font-family="Arial" font-size="14" fill="#2c3e50" font-weight="bold">User Code (Nodes)</text>
+
+  <!-- Nodes illustration -->
+  <g transform="translate(220, 330)">
+    <rect x="0" y="0" width="40" height="30" fill="#1abc9c" opacity="0.6" stroke="#16a085" stroke-width="1" rx="5"/>
+    <text x="20" y="20" text-anchor="middle" font-family="Arial" font-size="10" fill="#ffffff">Node A</text>
+  </g>
+  <g transform="translate(280, 330)">
+    <rect x="0" y="0" width="40" height="30" fill="#1abc9c" opacity="0.6" stroke="#16a085" stroke-width="1" rx="5"/>
+    <text x="20" y="20" text-anchor="middle" font-family="Arial" font-size="10" fill="#ffffff">Node B</text>
+  </g>
+  <g transform="translate(340, 330)">
+    <rect x="0" y="0" width="40" height="30" fill="#1abc9c" opacity="0.6" stroke="#16a085" stroke-width="1" rx="5"/>
+    <text x="20" y="20" text-anchor="middle" font-family="Arial" font-size="10" fill="#ffffff">Node C</text>
+  </g>
+
+  <!-- Arrows showing communication -->
+  <line x1="240" y1="330" x2="240" y2="310" stroke="#7f8c8d" stroke-width="2" stroke-dasharray="4,2"/>
+  <line x1="300" y1="330" x2="300" y2="310" stroke="#7f8c8d" stroke-width="2" stroke-dasharray="4,2"/>
+  <line x1="360" y1="330" x2="360" y2="310" stroke="#7f8c8d" stroke-width="2" stroke-dasharray="4,2"/>
+
+  <!-- Legend -->
+  <g transform="translate(450, 340)">
+    <rect x="0" y="0" width="15" height="15" fill="#3498db" opacity="0.5"/>
+    <text x="20" y="12" font-family="Arial" font-size="10" fill="#2c3e50">Communication</text>
+  </g>
+  <g transform="translate(450, 360)">
+    <rect x="0" y="0" width="15" height="15" fill="#e67e22" opacity="0.5"/>
+    <text x="20" y="12" font-family="Arial" font-size="10" fill="#2c3e50">Libraries</text>
+  </g>
+</svg>
