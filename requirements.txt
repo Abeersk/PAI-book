@@ -1,0 +1,8 @@
+requests>=2.31.0
+beautifulsoup4>=4.12.2
+cohere>=4.5.0
+qdrant-client>=1.7.0
+lxml>=4.9.3
+html2text>=2020.1.16
+python-dotenv>=1.0.0
+pytest>=7.4.0
